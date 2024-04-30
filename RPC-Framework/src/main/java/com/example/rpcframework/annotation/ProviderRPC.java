@@ -1,6 +1,6 @@
 package com.example.rpcframework.annotation;
 
-import com.example.rpcframework.provider.ProviderBeanProcessor;
+import com.example.rpcframework.server.ProviderBeanProcessor;
 import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 import java.lang.annotation.ElementType;

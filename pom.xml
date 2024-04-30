@@ -11,10 +11,10 @@
     <packaging>pom</packaging>
     <!--声明子模块-->
     <modules>
-        <module>Consumer</module>
-        <module>Provider01</module>
-        <module>Provider02</module>
-        <module>ProviderSharing</module>
+        <module>Client</module>
+        <module>Server01</module>
+        <module>Server02</module>
+        <module>ServerSharing</module>
         <module>RPC-Framework</module>
     </modules>
     <groupId>com.example</groupId>

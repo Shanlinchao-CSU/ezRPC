@@ -1,7 +1,7 @@
 package com.example.rpcframework.annotation;
 
-import com.example.rpcframework.constant.loadBalancerStrategies;
-import com.example.rpcframework.constant.faultHandleStrategies;
+import com.example.rpcframework.common.constant.loadBalancerStrategies;
+import com.example.rpcframework.common.constant.faultHandleStrategies;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
