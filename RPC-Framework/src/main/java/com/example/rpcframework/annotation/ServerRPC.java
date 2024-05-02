@@ -1,6 +1,6 @@
 package com.example.rpcframework.annotation;
 
-import com.example.rpcframework.server.ProviderBeanProcessor;
+import com.example.rpcframework.server.ServerBeanProcessor;
 import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 import java.lang.annotation.ElementType;
@@ -11,6 +11,6 @@ import java.lang.annotation.Target;
  * 开启Provider Bean的初始化Bean回调处理*/
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Import(ProviderBeanProcessor.class)
-public @interface ProviderRPC {
+@Import(ServerBeanProcessor.class)
+public @interface ServerRPC {
 }

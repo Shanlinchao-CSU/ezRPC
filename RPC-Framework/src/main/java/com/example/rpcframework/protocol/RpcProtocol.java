@@ -8,4 +8,11 @@ import java.io.Serializable;
 public class RpcProtocol<T> implements Serializable {
     private MsgHeader header;
     private T body;
+
+    public RpcProtocol() {
+    }
+    public RpcProtocol(MsgHeader header, T body) {
+        this.header = header;
+        this.body = body;
+    }
 }

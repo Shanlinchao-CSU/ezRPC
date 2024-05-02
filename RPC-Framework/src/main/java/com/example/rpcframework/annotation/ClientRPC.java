@@ -7,10 +7,11 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 
 /**
- * 将ConsumerBeanProcessor装入Bean
- * 开启Consumer Bean的初始化Bean回调处理*/
+ * 将ClientBeanProcessor装入Bean
+ * 开启Client Bean的初始化Bean回调处理
+ * 打在Client模块上的注释*/
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Import(ClientBeanProcessor.class)
-public @interface ConsumerRPC {
+public @interface ClientRPC {
 }

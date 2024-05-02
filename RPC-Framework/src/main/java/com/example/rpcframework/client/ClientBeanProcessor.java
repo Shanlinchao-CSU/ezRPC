@@ -2,6 +2,10 @@ package com.example.rpcframework.client;
 
 import com.example.rpcframework.annotation.DirectCall;
 import com.example.rpcframework.config.RpcProperties;
+import com.example.rpcframework.filter.FilterConfig;
+import com.example.rpcframework.loadBalancer.balancerFactory;
+import com.example.rpcframework.protocol.serialization.SerializationFactory;
+import com.example.rpcframework.registry.RegistryFactory;
 import com.example.rpcframework.utils.PropertiesUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -20,10 +24,14 @@ public class ClientBeanProcessor implements BeanPostProcessor, EnvironmentAware,
     RpcProperties rpcProperties;
     /**
      * InitializingBean的方法重写
-     * 调用时机:Bean属性被初始化完毕*/
+     * 调用时机:Bean属性被初始化完毕
+     * 作用:初始化所有工厂,根据配置文件加载对应实现类*/
     @Override
     public void afterPropertiesSet() throws Exception {
-
+        RegistryFactory.init();
+        SerializationFactory.init();
+        balancerFactory.init();
+        FilterConfig.initClientFilter();
     }
     /**
      * EnvironmentAware的方法重写

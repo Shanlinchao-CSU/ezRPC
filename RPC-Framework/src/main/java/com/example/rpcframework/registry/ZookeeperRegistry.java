@@ -1,5 +1,6 @@
 package com.example.rpcframework.registry;
 
+import com.example.rpcframework.server.ServerUtil.ServiceNameBuilder;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
@@ -39,7 +40,7 @@ public class ZookeeperRegistry implements RegistryService {
     public void register(Service service) throws Exception {
         ServiceInstance<Service> serviceInstance = ServiceInstance
                 .<Service>builder()
-                .name(service.getServiceName()+"$"+service.getServiceVersion())
+                .name(ServiceNameBuilder.buildServiceName(service.getServiceName(),service.getServiceVersion()))
                 .address(service.getServiceAddr())
                 .port(service.getServicePort())
                 .payload(service)

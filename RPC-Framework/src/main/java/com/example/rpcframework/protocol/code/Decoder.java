@@ -72,6 +72,10 @@ public class Decoder extends ByteToMessageDecoder {
      header.setVersion(version);
      header.setStatus(status);
      header.setRequestId(requestID);
+     header.setMsgType(msgType);
+     header.setSerialization(serialization_b);
+     header.setSerializationLen(serializationLen);
+     header.setMsgLen(dataLen);
 
      if (rpcMessage != null) {
          RpcProtocol<RpcMessage> protocol = new RpcProtocol<>();
