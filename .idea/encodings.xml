@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/RPC-Framework/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Server01/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Server02/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ServerSharing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

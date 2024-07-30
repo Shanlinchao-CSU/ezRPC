@@ -6,21 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Server02" />
         <module name="RPC-Framework" />
-        <module name="Server01" />
-        <module name="ServerSharing" />
-        <module name="Client" />
+        <module name="Service" />
+        <module name="Consumer" />
+        <module name="Provider01" />
+        <module name="Provider02" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Client" options="-parameters" />
+      <module name="Consumer" options="-parameters" />
+      <module name="Provider01" options="-parameters" />
+      <module name="Provider02" options="-parameters" />
       <module name="RPC-Framework" options="-parameters" />
-      <module name="Server01" options="-parameters" />
-      <module name="Server02" options="-parameters" />
-      <module name="ServerSharing" options="-parameters" />
+      <module name="Service" options="-parameters" />
       <module name="slc_rpc" options="" />
     </option>
   </component>
